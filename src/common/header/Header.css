@@ -173,3 +173,114 @@ header ul li a:hover {
     height: 10vh;
   }
 }
+
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .catgrories {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .catgrories span {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  header {
+    height: auto;
+    padding: 10px 20px;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    z-index: 888;
+  }
+  header ul li {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    line-height: 70px;
+  }
+  header .link {
+    display: none;
+  }
+  .close,
+  .open {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #ff014f;
+    display: block;
+    font-size: 25px;
+    z-index: 999;
+  }
+  .close {
+    right: 45%;
+  }
+  .close.home-btn {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    color: #ff014f;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .header.active {
+    height: 10vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .head {
+    padding: 5px 0;
+  }
+  .search {
+    padding: 5px 0;
+  }
+  .search-box i {
+    padding: 10px 15px;
+  }
+  .search-box input {
+    padding: 5px;
+  }
+  .catgrories {
+    padding: 0px 15px;
+  }
+  .catgrories span {
+    font-size: 20px;
+  }
+  .catgrories h4 {
+    font-size: 16px;
+  }
+  header ul li {
+    margin-left: 15px;
+  }
+  header ul li a {
+    font-size: 14px;
+  }
+}

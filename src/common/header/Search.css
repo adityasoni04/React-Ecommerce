@@ -1,0 +1,63 @@
+/* Base styles for search section */
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.search.active {
+  background: #f1f1f1; /* Change the background when scrolled */
+}
+
+.logo, .search-box, .icon {
+  /* Base styles for desktop */
+  flex: 1;
+}
+
+.logo {
+  /* Styling for logo */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box i {
+  margin-right: 1px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon .fa {
+  margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .logo, .search-box, .icon {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .search-box {
+    display: none; /* Hide the search box */
+  }
+
+  .icon {
+    justify-content: center;
+  }
+
+  .icon .fa:not(.fa-search) {
+    display: none; /* Hide all icons except the search icon */
+  }
+
+  .icon .fa-search {
+    display: inline-block; /* Show only the search icon */
+  }
+}
